@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(89.5deg, rgb(104, 208, 232) 1.5%, rgb(231, 144, 245) 100.5%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.game-title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Updated font-family */
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    background-color: #D3D3D3;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cell:hover {
+    background-color: #ccc;
+    transform: translateY(-3px);
+}
+
+#players {
+    margin-bottom: 10px;
+}
+
+#new-game {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#new-game:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
